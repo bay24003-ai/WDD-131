@@ -9,8 +9,8 @@
 
 	<body>
 		<header>
-			<h1>[Project name] Project Plan</h1>
-			<h2>FirstName LastName</h2>
+			<h1>[Movie Tracker] Project Plan</h1>
+			<h2>Wyatt Baysinger</h2>
 			<h2>WDD 131</h2>
 			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
 		</header>
@@ -19,20 +19,20 @@
 			<hr />
 			<h2>Overview</h2>
 			<h3>Purpose</h3>
-			<p>[Your purpose here]</p>
+			<p>Movie Tracker is a web application that helps users keep track of movies they have watched and movies they want to watch. Users can organize their personal watchlists, save movie ratings, and easily search their collection.</p>
 			<!-- change this -->
 
 			<h3>Audience</h3>
-			<p>[Your audience here]</p>
+			<p>The intended audience is movie enthusiasts, students, and casual viewers who want a simple and organized way to manage their movie collections and keep track of films they are interested in watching.</p>
 			<!-- change this -->
 
 			<h3>Dynamic elements</h3>
-			<p>[Describe dynamic elements provided by Javascript here]</p>
+			<p>JavaScript will be used to make the Movie Tracker website interactive and dynamic.  Users will be able to add movies to a watchlist, rate movies, search for titles, and delete movies from their collection.  The application will use localStorage to save movie data so that information remains available when the user returns to the site, and the movie list will update automatically whenever changes are made.</p>
 			<!-- change this -->
 
 			<hr />
 			<h2>Branding</h2>
-			<h3>Website Logo</h3>
+			<h3>https://logodix.com/logo/818941.png</h3>
 			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
 			<img src="#" alt="Logo image" />
 			<hr />
@@ -72,19 +72,79 @@
 			<h3>Pseudocode for your project</h3>
 
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit anim id est laborum.
+			Plain Text
+START
+ 
+Load saved movie data from localStorage
+ 
+IF saved movies exist
+Display all movies on the page
+ELSE
+Display a message saying "No movies added yet"
+END IF
+ 
+WHEN user submits the Add Movie form
+Get movie title
+Get movie genre
+Get movie rating
+ 
+Create a movie object
+ 
+Add movie object to movie list
+ 
+Save updated movie list to localStorage
+ 
+Refresh displayed movie list
+END WHEN
+ 
+WHEN user searches for a movie
+Filter movie list based on search text
+ 
+Display matching movies
+END WHEN
+ 
+WHEN user clicks Delete button
+Remove selected movie from movie list
+ 
+Save updated list to localStorage
+ 
+Refresh displayed movie list
+END WHEN
+ 
+END
 			</p>
 
 			<h3>Wireframes</h3>
 			<p>
-				Create wireframes for your project page(s). One for each page and list them
-				here. 
+------------------------------------------------
+| LOGO         NAVIGATION                      |
+------------------------------------------------
+| HERO IMAGE                                   |
+| "Track Your Favorite Movies"                 |
+| [Get Started Button]                         |
+------------------------------------------------
+| Stats Card | Stats Card | Stats Card         |
+------------------------------------------------
+| Footer                                     |
+------------------------------------------------
+------------------------------------------------
+| LOGO         NAVIGATION                      |
+------------------------------------------------
+| Add Movie Form                              |
+| Title  [__________]                         |
+| Genre  [__________]                         |
+| Rating [__________]                         |
+| [Add Movie]                                 |
+------------------------------------------------
+| Search Box                                  |
+------------------------------------------------
+| Movie List                                  |
+| ------------------------------------------ |
+| Movie 1    Edit    Delete                  |
+| Movie 2    Edit    Delete                  |
+------------------------------------------------
+| Footer                                      |
+------------------------------------------------
 			</p>
 
 			<h3>Landing page</h3>
