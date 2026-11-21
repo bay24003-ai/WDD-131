@@ -1,0 +1,52 @@
+Purpose & Audience:
+-Movie Tracker is a web application that helps users keep track of movies they have watched and movies they want to watch.
+-Users can organize their personal watchlists, save movie ratings, and easily search their collection.
+-The intended audience is movie enthusiasts, students, and casual viewers who want a simple and organized way to manage their movie collections and keep track of films they are interested in watching.
+
+Description of Dynamic Elements:
+-JavaScript will be used to make the Movie Tracker website interactive and dynamic. 
+-Users will be able to add movies to a watchlist, rate movies, search for titles, and delete movies from their collection. 
+-The application will use localStorage to save movie data so that information remains available when the user returns to the site, and the movie list will update automatically whenever changes are made.
+
+Pseudocode - Computational Thinking:
+
+Plain Text
+START
+ 
+Load saved movie data from localStorage
+ 
+IF saved movies exist
+Display all movies on the page
+ELSE
+Display a message saying "No movies added yet"
+END IF
+ 
+WHEN user submits the Add Movie form
+Get movie title
+Get movie genre
+Get movie rating
+ 
+Create a movie object
+ 
+Add movie object to movie list
+ 
+Save updated movie list to localStorage
+ 
+Refresh displayed movie list
+END WHEN
+ 
+WHEN user searches for a movie
+Filter movie list based on search text
+ 
+Display matching movies
+END WHEN
+ 
+WHEN user clicks Delete button
+Remove selected movie from movie list
+ 
+Save updated list to localStorage
+ 
+Refresh displayed movie list
+END WHEN
+ 
+END
